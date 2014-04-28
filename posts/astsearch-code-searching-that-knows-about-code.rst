@@ -73,8 +73,8 @@ another tool I wrote, can compare AST nodes against a template.
 
 Besides the command line interface, you can also use ASTsearch as a Python
 module (``import astsearch``). It's possible to define complex search patterns
-in Python code that can't be written at the command line. Documentation is
-coming soon.
+in Python code that can't be written at the command line. `See the docs
+<http://astsearch.readthedocs.org/en/latest/api.html>`_ for some more details.
 
 What's the catch?
 -----------------
