@@ -1,4 +1,8 @@
 tt {
     font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
     border: 1px solid #CCC;
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #F5F5F5;
 }
