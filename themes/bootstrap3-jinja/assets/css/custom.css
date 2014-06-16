@@ -1,0 +1,32 @@
+tt {
+    font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #F5F5F5;
+}
+
+.navbar-inverse {
+    background-color: #D9230F;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+    color: #EEE;
+}
+
+a {
+    color: #D9230F;
+}
+
+a:hover {
+    color: #91170a;
+}

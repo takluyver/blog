@@ -53,7 +53,7 @@ TRANSLATIONS = {
 
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair for each used language.
-SIDEBAR_LINKS = {
+NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
@@ -88,9 +88,17 @@ SIDEBAR_LINKS = {
 # rss feeds.
 #
 
-post_pages = (
-    ("posts/*.rst", "posts", "post.tmpl", True),
-    ("stories/*.rst", "stories", "story.tmpl", False),
+#~ post_pages = (
+    #~ ("posts/*.rst", "posts", "post.tmpl", True),
+    #~ ("stories/*.rst", "stories", "story.tmpl", False),
+#~ )
+
+POSTS = (
+    ("posts/*.rst", "posts", "post.tmpl"),
+)
+
+PAGES = (
+    ("stories/*.rst", "stories", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -241,7 +249,7 @@ DEPLOY_COMMANDS = [
 # translated
 
 # Name of the theme to use.
-THEME = 'custom'
+THEME = 'bootstrap3-jinja'
 
 # Color scheme to be used for code blocks. If your theme provides
 # "assets/css/code.css" this is ignored.
@@ -291,11 +299,8 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
                                        author=BLOG_AUTHOR,
                                        date=time.gmtime().tm_year)
 
-# To enable comments via Disqus, you need to create a forum at
-# http://disqus.com, and set DISQUS_FORUM to the short name you selected.
-# If you want to disable comments, set it to False.
-# Default is "nikolademo", used by the demo sites
-DISQUS_FORUM = False
+COMMENT_SYSTEM = 'disqus'
+COMMENT_SYSTEM_ID = 'takluyverblog'
 
 # Create index.html for story folders?
 # STORY_INDEX = False
@@ -431,6 +436,9 @@ DISQUS_FORUM = False
 # </script>
 # """
 
+EXTRA_HEAD_DATA = """
+<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+"""
 # EXTRA_HEAD_DATA = """
 # <link rel="stylesheet" type="text/css" href="/assets/css/tipuesearch.css">
 # <div id="tipue_search_content" style="margin-left: auto; margin-right: auto; padding: 20px;"></div>
