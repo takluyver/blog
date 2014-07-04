@@ -20,6 +20,10 @@ GUI toolkits
 
 The first thing you'll need to choose is a GUI toolkit.
 
+.. image:: /images/QtLogo.png
+   :align: right
+   :alt: Qt logo
+
 - For traditional desktop UIs, **Qt** is a clear winner. It's powerful, looks
   native on all the major platforms, and has probably the biggest community.
   There are two different Python bindings: `PyQt <http://www.riverbankcomputing.com/software/pyqt/intro>`_
@@ -33,6 +37,16 @@ The first thing you'll need to choose is a GUI toolkit.
   `Qt Designer <http://qt-project.org/doc/qt-4.8/designer-manual.html>`_ is
   a drag and drop interface to design your UI; you can compile its .ui files
   to Python modules with the pyuic command line tool.
+
+.. figure:: /images/Qt_Designer.png
+
+   Qt Designer in action
+
+.. image:: /images/kivy-logo.png
+   :align: right
+   :height: 64px
+   :alt: Kivy logo
+
 - For attractive, tablet-style interfaces, **Kivy** is the
   right choice. It's a fairly young but promising system. If you want to bring
   your application to tablets and smartphones, then Kivy is the only option
@@ -44,10 +58,11 @@ The first thing you'll need to choose is a GUI toolkit.
   is my favourite - it hasn't been updated in years, but then neither has Tkinter
   (except that in Python 3, you ``import tkinter`` rather than ``import Tkinter``).
 - An increasingly popular option is to write your application as a local web
-  server, and build the UI in HTML and Javascript. This makes some things easier
-  and others harder. `CEF Python <https://code.google.com/p/cefpython/>`_ lets
-  you make a browser window based on Chrome, but I haven't investigated that
-  much.
+  server, and build the UI in HTML and Javascript. This lets you use Python's
+  large ecosystem of web frameworks and libraries, but it's harder to integrate
+  with desktop conventions for things like opening files and window management.
+  `CEF Python <https://code.google.com/p/cefpython/>`_ lets you make a window
+  for your application, based on Google Chrome, but I haven't tried that.
 
 A couple of alternatives I wouldn't recommend unless you have a reason to prefer
 them: **GTK** is popular on Linux, but it
