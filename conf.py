@@ -61,6 +61,8 @@ NAVIGATION_LINKS = {
     ),
 }
 
+WRITE_TAG_CLOUD=False
+
 
 ##############################################
 # Below this point, everything is optional
@@ -186,11 +188,11 @@ post_compilers = {
 
 GIT_DIR = '--git-dir=output/.git --work-tree=output'
 
-DEPLOY_COMMANDS = [
+DEPLOY_COMMANDS = {'default': [
     'git {git_dir} add .'.format(git_dir=GIT_DIR),
     "git {git_dir} commit -m 'latest auto deploy build'".format(git_dir=GIT_DIR),
     'git {git_dir} push origin master -f'.format(git_dir=GIT_DIR)
-]
+]}
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
