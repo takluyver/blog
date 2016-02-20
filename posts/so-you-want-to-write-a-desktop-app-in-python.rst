@@ -98,8 +98,8 @@ package your application and its dependencies:
   `Inno Setup <http://www.jrsoftware.org/isinfo.php>`_ to have more control over
   building a Windows installer.
 - `PyInstaller <http://www.pyinstaller.org/>`_ is similar to cx_Freeze.
-  It doesn't yet support Python 3, but it does have the ability to produce a
-  'single file' executable.
+  It doesn't yet support Python 3 (update: it does now, since October 2015),
+  but it does have the ability to produce a 'single file' executable.
 - `py2app <http://pythonhosted.org/py2app/>`_ is a freeze tool specifically
   for building Mac .app bundles.
 - `py2exe <http://www.py2exe.org/>`_ is a Windows-only freeze tool.
