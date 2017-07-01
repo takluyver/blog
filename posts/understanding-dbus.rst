@@ -1,4 +1,4 @@
-.. title: Understanding DBus
+.. title: Understanding D-Bus
 .. slug: understanding-dbus
 .. date: 2017-07-01 17:16:35 UTC
 .. tags: 
