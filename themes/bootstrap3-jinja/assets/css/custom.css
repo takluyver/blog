@@ -30,3 +30,8 @@ a {
 a:hover {
     color: #91170a;
 }
+
+.screenshot {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
