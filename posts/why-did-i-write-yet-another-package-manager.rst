@@ -7,6 +7,11 @@
 .. description: 
 .. type: text
 
+**Update July 2017**: Batis is no longer maintained. I think something like it
+would have been great a few years earlier, but now I hope that `Flatpak <http://flatpak.org/>`_
+or `Snaps <https://snapcraft.io/>`_ will give us a better option for distributing
+desktop applications.
+
 `Batis <http://batis-installer.github.io/>`_ is a package manager for desktop applications on Linux.
 Linux users are probably already used to using several different package managers -
 apt, pip, npm, etc. - so why on earth do we need one more?
