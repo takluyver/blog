@@ -39,8 +39,9 @@ There are two messaging patterns on offer:
    a **method return**, or an **error**.
 2. **Signals** are sent out to anyone who's interested, and there's no response.
 
-That's four message types in total. All four can carry data: different kinds of
-number, UTF-8 strings, arrays and dictionaries,
+That's four message types in total, including returns and errors.
+All four can carry data: different kinds of number,
+UTF-8 strings, arrays and dictionaries,
 and it's even possible to transfer a file descriptor in a D-Bus message.
 
 **The bus** is the hub that passes messages on to the right destinations. All
@@ -84,6 +85,12 @@ There's usually only one interface that's interesting for applications,
 but most objects also have some standard interfaces like
 ``org.freedesktop.DBus.Introspectable``, which you can use to examine the
 methods and signals of an object.
+
+All these names start with reversed domain names,
+so people don't accidentally use the same name for different things.
+The examples I've given are defined by ``freedesktop.org``.
+If I was defining my own D-Bus API, the names might look like
+``io.github.takluyver.projectname``.
 
 Developer tools
 ---------------
