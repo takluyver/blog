@@ -100,6 +100,9 @@ package your application and its dependencies:
 - `PyInstaller <http://www.pyinstaller.org/>`_ is similar to cx_Freeze.
   It doesn't yet support Python 3 (update: it does now, since October 2015),
   but it does have the ability to produce a 'single file' executable.
+- `fbs <https://build-system.fman.io>`_ is based on PyInstaller but also solves
+  common tasks such as accessing data files, creating an installer and code
+  signing.
 - `py2app <http://pythonhosted.org/py2app/>`_ is a freeze tool specifically
   for building Mac .app bundles.
 - `py2exe <http://www.py2exe.org/>`_ is a Windows-only freeze tool.
@@ -143,3 +146,6 @@ Miscellaneous
   need much Python processing time.
 - **Updates**: `Esky <https://pypi.python.org/pypi/esky>`_ is a framework for
   updating frozen Python applications. I haven't tried it, but it looks interesting.
+  Some people have reported
+  `problems <https://fman.io/blog/codesigning-and-automatic-updates-for-pyqt-apps/>`_
+  with it however.
